@@ -64,7 +64,14 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
- 
+
+pv:
+  storage: 1Gi
+  nfs:
+    path: /mnt/IT-Academy/nfs-data/sa2-21-22/Shahov
+    server: 192.168.37.105
+pvc:
+  storage: 1Gi
 
 autoscaling:
   enabled: false

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: "{{ include "my-app.fullname" . }}-pv"
+  labels:
+    type: nfs
+    name: "{{ include "my-app.fullname" . }}-pv"
+    {{- include "my-app.labels" . | nindent 4 }}
+spec:
+  capacity:
+    storage: {{ .Values.pv.storage }}
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  nfs:
+    {{- toYaml .Values.pv.nfs | nindent 4 }}
