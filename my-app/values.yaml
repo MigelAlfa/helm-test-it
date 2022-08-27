@@ -68,7 +68,7 @@ resources:
 pv:
   storage: 1Gi
   nfs:
-    path: /mnt/IT-Academy/nfs-data/sa2-21-22/Shahov
+    path: /mnt/IT-Academy/nfs-data/sa2-21-22/demo_app
     server: 192.168.37.105
 pvc:
   storage: 1Gi
