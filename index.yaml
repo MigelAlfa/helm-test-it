@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  my-app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-27T12:34:42.162671613+03:00"
+    description: A Helm chart for Kubernetes
+    digest: 447b2b61612b3b646cce73aa6f8d6806cbcc71bc9baa2db6f9bc265d8cbd7e00
+    name: my-app
+    type: application
+    urls:
+    - https://migelalfa.github.io/helm-test-it/my-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-27T12:34:42.161718941+03:00"
