@@ -3,7 +3,17 @@ entries:
   my-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-27T13:04:53.960861734+03:00"
+    created: "2022-08-27T13:17:14.529587274+03:00"
+    description: A Helm chart for Kubernetes
+    digest: 2a76f4a41e0d42d0f139033ca324c2cdf72d0231118beb7be8d2fc841230d677
+    name: my-app
+    type: application
+    urls:
+    - https://migelalfa.github.io/helm-test-it/my-app-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-27T13:17:14.527137956+03:00"
     description: A Helm chart for Kubernetes
     digest: edd2f18b16020d39a58eaf808b6243db06e43d36d28339ea5295e6fd10971403
     name: my-app
@@ -13,7 +23,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-27T13:04:53.959224541+03:00"
+    created: "2022-08-27T13:17:14.525939058+03:00"
     description: A Helm chart for Kubernetes
     digest: 447b2b61612b3b646cce73aa6f8d6806cbcc71bc9baa2db6f9bc265d8cbd7e00
     name: my-app
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://migelalfa.github.io/helm-test-it/my-app-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-27T13:04:53.956796876+03:00"
+generated: "2022-08-27T13:17:14.524622398+03:00"
