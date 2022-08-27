@@ -47,10 +47,10 @@ spec:
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-            volumeMounts:
+          volumeMounts:
           - name: persistent-storage
             mountPath: "/var/www/html"
-          volumes:
+      volumes:
       - name: persistent-storage
         persistentVolumeClaim:
           claimName: "{{ include "my-app.fullname" . }}-pvc"
