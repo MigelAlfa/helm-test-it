@@ -1,15 +1,3 @@
-helm repo add bitnami https://charts.bitnami.com/bitnami
-helm repo update
-helm search repo app -l
-ll
-helm repo add nfs-subdir-external-provisioner https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner
-helm repo update
-helm install nfs-subdir-external-provisioner nfs-subdir-external-provisioner/nfs-subdir-external-provisioner     --set nfs.server=192.168.37.105 --set nfs.path=/mnt/IT-Academy/nfs-data/sa2-21-22/
-helm install my-release --set global.storageClass=nfs-client,wordpressUsername=migel,wordpressPassword=alfa32,mariadb.auth.rootPassword=alfa bitnami/wordpress
-nano wp_ingress.yaml
-kubectl apply -f wp_ingress.yaml
-sudo nano /etc/hosts
-
 Started by user admin
 Running as SYSTEM
 Building in workspace /var/lib/jenkins/workspace/projeck
@@ -17,6 +5,7 @@ Building in workspace /var/lib/jenkins/workspace/projeck
 
 ## Check connection to the host
 
+```
 PING 192.168.56.10 (192.168.56.10) 56(84) bytes of data.
 64 bytes from 192.168.56.10: icmp_seq=1 ttl=63 time=1.04 ms
 64 bytes from 192.168.56.10: icmp_seq=2 ttl=63 time=0.839 ms
@@ -27,11 +16,11 @@ PING 192.168.56.10 (192.168.56.10) 56(84) bytes of data.
 --- 192.168.56.10 ping statistics ---
 5 packets transmitted, 5 received, 0% packet loss, time 4036ms
 rtt min/avg/max/mdev = 0.839/1.107/1.873/0.389 ms
+```
 
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
 ## Install Nmap
-
+```
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -79,9 +68,9 @@ Unpacking nmap (7.80+dfsg1-2build1) ...
 Setting up nmap (7.80+dfsg1-2build1) ...
 Processing triggers for man-db (2.9.1-1) ...
 Starting Nmap 7.80 ( https://nmap.org ) at 2022-10-04 12:23 UTC
-
+```
 ## Checks all online hosts
-
+```
 Nmap scan report for 192.168.56.2
 Host is up (0.0018s latency).
 Nmap scan report for 192.168.56.5
@@ -91,11 +80,10 @@ Host is up (0.0017s latency).
 Nmap scan report for 192.168.56.103
 Host is up (0.0021s latency).
 Nmap done: 256 IP addresses (4 hosts up) scanned in 3.30 seconds
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+```
 
 ## Remove nmap
-
+```
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -131,9 +119,9 @@ After this operation, 4,499 kB disk space will be freed.
 Removing nmap (7.80+dfsg1-2build1) ...
 Processing triggers for man-db (2.9.1-1) ...
 Finished: SUCCESS
-
+```
 ## Print list of collected/online hosts
-
+```
 Nmap scan report for 192.168.56.2
 Host is up (0.0018s latency).
 Nmap scan report for 192.168.56.5
@@ -143,3 +131,4 @@ Host is up (0.0017s latency).
 Nmap scan report for 192.168.56.103
 Host is up (0.0021s latency).
 Nmap done: 256 IP addresses (4 hosts up) scanned in 3.30 seconds
+```
