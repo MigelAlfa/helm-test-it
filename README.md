@@ -1,8 +1,11 @@
+### 19. Jenkins. Routine
+
+```
 Started by user admin
 Running as SYSTEM
 Building in workspace /var/lib/jenkins/workspace/projeck
 [projeck] $ /bin/bash /tmp/jenkins3369960003582787626.sh
-
+```
 ## Check connection to the host
 
 ```
